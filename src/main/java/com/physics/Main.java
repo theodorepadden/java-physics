@@ -1,18 +1,15 @@
 package com.physics;
 
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
-        int[] pos = { 0,  0};
-        int[] vel = { 0,  10};
-        int[] acc = { 0,  -10};
+        Force Gravity = new Force(0, -9.81);
 
-        physicsObject ball = new physicsObject(pos, vel, acc);
+        physicsObject Ball = new physicsObject(new double[] {0,0}, new double[] {0,0}, new double[] {0,0}, 1);
 
-
-        System.out.println(ball.getAcceleration()[0]);
-        System.out.println(ball.getVelocity());
-        System.out.println(ball.getPosition());
-
+        Ball.applyForce(Gravity);
+        System.out.println(Ball.getPosition());
+        System.out.println(Ball.getMagnitudeVelocity());
+        System.out.println(Ball.getMagnitudeAcceleration());
     }
 }
