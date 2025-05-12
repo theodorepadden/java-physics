@@ -15,5 +15,5 @@ public class Force {
     public Force(double MagX, double MagY) {
         this.setMagnitude(MagX, MagY);
     }
-    //this is a test to make sure things are working
+    //this is a test to make sure things are workingawdawdaw
 }
