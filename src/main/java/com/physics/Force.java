@@ -16,4 +16,5 @@ public class Force {
         this.setMagnitude(MagX, MagY);
     }
     //this is a test to make sure things are workingawdawdaw rgrg
+    //ap calc test was easy
 }
